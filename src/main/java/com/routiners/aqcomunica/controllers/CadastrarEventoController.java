@@ -1,13 +1,13 @@
-package com.routiners.aqcomunica;
+package com.routiners.aqcomunica.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class EventoController {
+public class CadastrarEventoController {
 
 	@RequestMapping("/cadastrarEvento")
-	public String formEvento() {
-		return "formEvento";
+	public String evento() {
+		return "cadastrarEvento";
 	}
 }
