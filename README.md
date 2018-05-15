@@ -1,6 +1,6 @@
-# IFMS AQUI COMUNICA
+﻿# IFMS AQUI COMUNICA
 
-IFMS AQUI COMUNICA é um sistema web voltado para servidores e estudantes do IFMS Campus Aquidauana, onde é listado os eventos que ocorrerão ou ocorreram na instituição.
+IFMS AQUI COMUNICA é um sistema web voltado para servidores e estudantes do IFMS Campus Aquidauana, onde é listado os eventos da instituição.
 
 O sistema foi desenvolvido com o intuito de facilitar a publição dos eventos e inscrição dos interessados no mesmo.
 
