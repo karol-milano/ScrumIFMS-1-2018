@@ -1,0 +1,73 @@
+package com.routiners.aqcomunica.models;
+
+import java.io.Serializable;
+
+import javax.persistence.*;
+
+@Entity
+public class Usuario implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)	//fazendo com que o id dos usuários seja preenchido automaticamente
+	private long id;
+
+	@Column
+	private String nome;
+	
+	@Column
+	private String email;
+	
+	@Column
+	private String senha;
+	
+	@Column
+	private int tipo_conta;
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getSenha() {
+		return senha;
+	}
+
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+
+	public int getTipo_conta() {
+		return tipo_conta;
+	}
+
+	public void setTipo_conta(int tipo_conta) {
+		this.tipo_conta = tipo_conta;
+	}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+	
+	
+}

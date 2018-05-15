@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html xmlns:th="http://thymeleaf.org"
-	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	  lang="pt-br">
 	<head>
+		<meta charset="utf-8" />
 		<title>AQ Comunica -- Cadastre seu evento</title>
 	</head>
 	<body>
@@ -13,7 +15,12 @@
 			DATA: <input type="date" value="" name="data" />
 			INICIO: <input type="time" value="" name="horario_inicio" />
 			TÉRMINO: <input type="time" value="" name="horario_fim" />
-			
+			DESCRIÇÃO: <input type="text" value="" name="descricao" />
+			CATEGORIA: <input type="text" value="" name="categoria"/>
+			NÚMERO DE VAGAS: <input type="number" value="" name="numero_vagas"/>
+			PARA MAIS INFORMAÇÕES FALAR COM: <input type="text" value="" name="nome_contato" />
+			NÚMERO: <input type="text" value="" name="numero_contato" />
+			DESCRIÇÃO EXTRA: <input type="text" value="" name="descricao_extra" />
 			<button type="submit">PUBLICAR EVENTO</button>
 		</form>
 	</body>
