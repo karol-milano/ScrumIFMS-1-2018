@@ -5,7 +5,13 @@ import java.io.Serializable;
 import javax.persistence.*;
 
 @Entity
-public class Usuario implements Serializable {
+@Table(name = "usuario")
+public class Usuario implements Serializable {	
+
+	public Usuario() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 
 	private static final long serialVersionUID = 1L;
 	
