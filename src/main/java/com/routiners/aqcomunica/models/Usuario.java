@@ -19,16 +19,16 @@ public class Usuario implements Serializable {
 	@GeneratedValue(strategy=GenerationType.AUTO)	//fazendo com que o id dos usuários seja preenchido automaticamente
 	private long id;
 
-	@Column
+	@Column(name="nome")
 	private String nome;
 	
-	@Column
+	@Column(name="email")
 	private String email;
 	
-	@Column
+	@Column(name="senha")
 	private String senha;
 	
-	@Column
+	@Column(name="tipo_conta")
 	private int tipo_conta;
 
 	public long getId() {

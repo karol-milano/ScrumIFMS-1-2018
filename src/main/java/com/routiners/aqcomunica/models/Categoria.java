@@ -24,7 +24,7 @@ public class Categoria implements Serializable{
 	@GeneratedValue(strategy=GenerationType.AUTO)	//Fazendo com que o id das categorias seja preenchido automaticamente
 	private long id;
 	
-	@Column
+	@Column(name="categoria")
 	private String categoria;
 
 	public long getId() {

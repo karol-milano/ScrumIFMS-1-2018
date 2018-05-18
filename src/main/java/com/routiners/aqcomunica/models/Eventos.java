@@ -24,56 +24,41 @@ public class Eventos implements Serializable{
 	@GeneratedValue(strategy=GenerationType.AUTO)	//Fazendo com que o id dos eventos seja preenchido automaticamente
 	private long id;
 	
-	@Column
+	@Column(name="nome")
 	private String nome;
 	
-	@Column
+	@Column(name="data")
 	private String data;
 	
-	@Column
+	@Column(name="local")
 	private String local;
 	
-	@Column
+	@Column(name="horario_inicio")
 	private String horario_inicio;
 	
-	@Column
+	@Column(name="horario_fim")
 	private String horario_fim;
 	
-	@Column
+	@Column(name="descricao")
 	private String descricao;
 	
-	@Column
-	private String descricao_extra;
-	
-	@Column
+	@Column(name="id_categoria")
 	private long id_categoria;
 	
-	@Column
+	@Column(name="numero_vagas")
 	private int numero_vagas;
 	
-	@Column
+	@Column(name="nome_contato")
 	private String nome_contato;
 	
-	@Column
+	@Column(name="numero_contato")
 	private String numero_contato;
 	
-	@Column
-	private String segundo_nome_contato;
+	@Column(name="estado")
+	private int estado;
 	
-	@Column
-	private String segundo_numero_contato;
-	
-	@Column
-	private String terceiro_nome_contato;
-	
-	@Column
-	private String terceiro_numero_contato;
-	
-	@Column
-	private int id_estado;
-	
-	@Column
-	private String gerenciador;
+	@Column(name="administrador")
+	private String administrador;
 	
 	public long getId() {
 		return id;
@@ -131,22 +116,14 @@ public class Eventos implements Serializable{
 		this.descricao = descricao;
 	}
 
-	public String getGerenciador() {
-		return gerenciador;
+	public String getAdministrador() {
+		return administrador;
 	}
 
-	public void setGerenciador(String gerenciador) {
-		this.gerenciador = gerenciador;
+	public void setAdministrador(String administrador) {
+		this.administrador = administrador;
 	}
-
-	public String getDescricao_extra() {
-		return descricao_extra;
-	}
-
-	public void setDescricao_extra(String descricao_extra) {
-		this.descricao_extra = descricao_extra;
-	}
-
+	
 	public long getId_categoria() {
 		return id_categoria;
 	}
@@ -179,50 +156,17 @@ public class Eventos implements Serializable{
 		this.numero_contato = numero_contato;
 	}
 
-	public String getSegundo_nome_contato() {
-		return segundo_nome_contato;
+	public int getEstado() {
+		return estado;
 	}
 
-	public void setSegundo_nome_contato(String segundo_nome_contato) {
-		this.segundo_nome_contato = segundo_nome_contato;
-	}
-
-	public String getSegundo_numero_contato() {
-		return segundo_numero_contato;
-	}
-
-	public void setSegundo_numero_contato(String segundo_numero_contato) {
-		this.segundo_numero_contato = segundo_numero_contato;
-	}
-
-	public String getTerceiro_nome_contato() {
-		return terceiro_nome_contato;
-	}
-
-	public void setTerceiro_nome_contato(String terceiro_nome_contato) {
-		this.terceiro_nome_contato = terceiro_nome_contato;
-	}
-
-	public String getTerceiro_numero_contato() {
-		return terceiro_numero_contato;
-	}
-
-	public void setTerceiro_numero_contato(String terceiro_numero_contato) {
-		this.terceiro_numero_contato = terceiro_numero_contato;
-	}
-
-	public int getId_estado() {
-		return id_estado;
-	}
-
-	public void setId_estado(int id_estado) {
-		this.id_estado = id_estado;
+	public void setEstado(int estado) {
+		this.estado = estado;
 	}
 
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
-	
 	
 	
 }
