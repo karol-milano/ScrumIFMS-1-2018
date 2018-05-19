@@ -15,11 +15,6 @@ public class IndexController {
 	private EventosRepository er;
 	
 	@RequestMapping("/")
-	public String Index() {
-		return "index";
-	}
-	
-	@RequestMapping("/eventos")
 	public ModelAndView listarEventos() {
 		ModelAndView mv = new ModelAndView("index");
 		Iterable<Eventos> eventos = er.findAll();
