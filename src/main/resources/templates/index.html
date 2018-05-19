@@ -1,9 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 	<head>
 		<title>AQ COMUNICA</title>
 	</head>
 	<body>
 		<h1>Página de eventos do IFMS Campus Aquidauana</h1>
+		<h3><a href="/cadastrarEvento">Cadastrar Evento</a></h3>
+		
+		<div th:each="evento : ${eventos}">
+			<div class="row">
+				<p><span th:text=${evento.nome}></span></p>
+				<p><span th:text=${evento.data}></span></p>
+				<p><span th:text=${evento.local}></span></p>
+				<p><span th:text=${evento.horario_inicio}></span></p>
+				<p><span th:text=${evento.horario_fim}></span></p>
+				<p><span th:text=${evento.descricao}></span></p>
+				<p><span th:text=${evento.numero_contato}></span></p>
+				<p><span th:text=${evento.nome_contato}></span></p>
+				<p><span th:text=${evento.numero_vagas}></span></p>
+			</div>
+		</div>
 	</body>
 </html>

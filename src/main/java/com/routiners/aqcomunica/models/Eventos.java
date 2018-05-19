@@ -43,10 +43,10 @@ public class Eventos implements Serializable{
 	private String descricao;
 	
 	@Column(name="id_categoria")
-	private long id_categoria;
+	private String id_categoria;
 	
 	@Column(name="numero_vagas")
-	private int numero_vagas;
+	private String numero_vagas;
 	
 	@Column(name="nome_contato")
 	private String nome_contato;
@@ -55,7 +55,7 @@ public class Eventos implements Serializable{
 	private String numero_contato;
 	
 	@Column(name="estado")
-	private int estado;
+	private String estado;
 	
 	@Column(name="administrador")
 	private String administrador;
@@ -124,19 +124,19 @@ public class Eventos implements Serializable{
 		this.administrador = administrador;
 	}
 	
-	public long getId_categoria() {
+	public String getId_categoria() {
 		return id_categoria;
 	}
 
-	public void setId_categoria(long id_categoria) {
+	public void setId_categoria(String id_categoria) {
 		this.id_categoria = id_categoria;
 	}
 
-	public int getNumero_vagas() {
+	public String getNumero_vagas() {
 		return numero_vagas;
 	}
 
-	public void setNumero_vagas(int numero_vagas) {
+	public void setNumero_vagas(String numero_vagas) {
 		this.numero_vagas = numero_vagas;
 	}
 
@@ -156,11 +156,11 @@ public class Eventos implements Serializable{
 		this.numero_contato = numero_contato;
 	}
 
-	public int getEstado() {
+	public String getEstado() {
 		return estado;
 	}
 
-	public void setEstado(int estado) {
+	public void setEstado(String estado) {
 		this.estado = estado;
 	}
 
