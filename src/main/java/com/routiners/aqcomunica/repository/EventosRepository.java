@@ -6,4 +6,5 @@ import com.routiners.aqcomunica.models.Eventos;
 
 public interface EventosRepository extends CrudRepository<Eventos, String>{
 
+	Eventos findById(long id);
 }

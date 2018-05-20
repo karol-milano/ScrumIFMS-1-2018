@@ -12,33 +12,45 @@
       	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	</head>
 	<body>
-		<h1>Página de eventos do IFMS Campus Aquidauana</h1>
-		<h3><a class="waves-effect waves-light btn" href="/cadastrarEvento"><i class="material-icons right">add_circle</i>Publlicar Evento</a></h3>
+		<div class="navbar-fixed">
+			<nav class="teal lighten-2">
+			    <div class="nav-wrapper">
+			      <a href="#" class="brand-logo"><i class="material-icons center">event</i>IFMS Aqui Comunica</a>
+			      <ul id="nav-mobile" class="right hide-on-med-and-down">
+			        <li><a href="/cadastrarEvento">Publique seu evento</a></li>
+			        <li><a >Login</a></li>
+			        <li><a >É novo aqui? Cadastre-se</a></li>
+			      </ul>
+			    </div>
+			  </nav>
+		</div>
+		
+		<h1 class="center-align"><b>Página de eventos do IFMS Campus Aquidauana</b></h1>
 		
 		<table class="container">
 			<thead>
 				<tr>
-					<th>Nome</th>
-					<th>Data</th>
-					<th>Local</th>
-					<th>Horário de início</th>
-					<th>Horário de térnimo</th>
-					<th>Descrição</th>
-					<th>Numero para contato</th>
-					<th>Para mais informações falar com</th>
-					<th>Quantidade de vagas</th>
+					<th class="center-align">Nome</th>
+					<th class="center-align">Data</th>
+					<th class="center-align">Local</th>
+					<th class="center-align">Início</th>
+					<th class="center-align">Término</th>
+					<th class="center-align">Descrição</th>
+					<th class="center-align">+ Informações falar com:</th>
+					<th class="center-align">Numero para contato</th>
+					<th class="center-align">Vagas restantes</th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr th:each="evento : ${eventos}">
-					<td><span th:text=${evento.nome}></span></td>
+					<td><a th:href="${(#mvc.url('IC#detalhesEvento').arg(0, evento.id)).build()}"><span th:text=${evento.nome}></span></a></td>
 					<td><span th:text=${evento.data}></span></td>
 					<td><span th:text=${evento.local}></span></td>
 					<td><span th:text=${evento.horario_inicio}></span></td>
 					<td><span th:text=${evento.horario_fim}></span></td>
 					<td><span th:text=${evento.descricao}></span></td>
-					<td><span th:text=${evento.numero_contato}></span></td>
 					<td><span th:text=${evento.nome_contato}></span></td>
+					<td><span th:text=${evento.numero_contato}></span></td>
 					<td><span th:text=${evento.numero_vagas}></span></td>
 				</tr>
 			</tbody>
