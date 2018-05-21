@@ -43,15 +43,15 @@
 			</thead>
 			<tbody>
 				<tr th:each="evento : ${eventos}">
-					<td><a th:href="${(#mvc.url('IC#detalhesEvento').arg(0, evento.id)).build()}"><span th:text=${evento.nome}></span></a></td>
-					<td><span th:text=${evento.data}></span></td>
-					<td><span th:text=${evento.local}></span></td>
-					<td><span th:text=${evento.horario_inicio}></span></td>
-					<td><span th:text=${evento.horario_fim}></span></td>
-					<td><span th:text=${evento.descricao}></span></td>
-					<td><span th:text=${evento.nome_contato}></span></td>
-					<td><span th:text=${evento.numero_contato}></span></td>
-					<td><span th:text=${evento.numero_vagas}></span></td>
+					<td class="center-align"><a th:href="${(#mvc.url('IC#detalhesEvento').arg(0, evento.id)).build()}"><span th:text=${evento.nome}></span></a></td>
+					<td class="center-align"><span th:text=${evento.data}></span></td>
+					<td class="center-align"><span th:text=${evento.local}></span></td>
+					<td class="center-align"><span th:text=${evento.horario_inicio}></span></td>
+					<td class="center-align"><span th:text=${evento.horario_fim}></span></td>
+					<td class="center-align"><span th:text=${evento.descricao}></span></td>
+					<td class="center-align"><span th:text=${evento.nome_contato}></span></td>
+					<td class="center-align"><span th:text=${evento.numero_contato}></span></td>
+					<td class="center-align"><span th:text=${evento.numero_vagas}></span></td>
 				</tr>
 			</tbody>
 		</table>
