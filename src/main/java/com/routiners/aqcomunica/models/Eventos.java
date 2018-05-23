@@ -57,8 +57,9 @@ public class Eventos implements Serializable{
 	@Column(name="estado")
 	private String estado;
 	
-	@Column(name="administrador")
-	private String administrador;
+	@Column(name="organizador")
+	private String organizador;
+	
 	
 	public long getId() {
 		return id;
@@ -115,14 +116,6 @@ public class Eventos implements Serializable{
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
-
-	public String getAdministrador() {
-		return administrador;
-	}
-
-	public void setAdministrador(String administrador) {
-		this.administrador = administrador;
-	}
 	
 	public String getId_categoria() {
 		return id_categoria;
@@ -162,6 +155,14 @@ public class Eventos implements Serializable{
 
 	public void setEstado(String estado) {
 		this.estado = estado;
+	}
+
+	public String getOrganizador() {
+		return organizador;
+	}
+
+	public void setOrganizador(String organizador) {
+		this.organizador = organizador;
 	}
 
 	public static long getSerialversionuid() {
