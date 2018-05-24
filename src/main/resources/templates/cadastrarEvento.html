@@ -81,43 +81,46 @@
 		<h1 class="center-align"><b><br>PREENCHA OS DADOS DO SEU EVENTO<br><br></b></h1>
 		
 		<form class="container" name="cadastroEvento" id="cadastroEventoId" method="post">
-			<input class="validate" type="text" value="" name="nome" id="nomeId" />
-			<label for="nomeId">NOME DO EVENTO</label>
+			<div class="input-field col s12">
+				<input class="validate" type="text" value="" name="nome" id="nomeId" />
+				<label for="nomeId">NOME DO EVENTO *</label>
+			</div>
+			
 			<div class="row">
 				<div class="input-field col s6">
 					<i class="material-icons prefix">add_location</i>
 					<input class="validate" type="text" value="" name="local" id="localId" />
-					<label for="localId">LOCAL</label>
+					<label for="localId">LOCAL *</label>
 				</div>
 				<div class="input-field col s2">
 					<i class="material-icons prefix">event</i>
 					<input class="validate" type="date" value="" name="data" id="dataId" />
-					<label for="dataId">DATA:</label>
+					<label for="dataId">DATA *</label>
 				</div>
 				<div class="input-field col s2">
 					<i class="material-icons prefix">access_time</i>
 					<input class="validate" type="time" value="" name="horario_inicio" id="inicioId" />
-					<label for="inicioId">INÍCIO</label>
+					<label for="inicioId">INÍCIO *</label>
 				</div>
 				<div class="input-field col s2">
 					<i class="material-icons prefix">access_alarms</i>
 					<input class="validate" type="time" value="" name="horario_fim" id="terminoId" />
-					<label>TÉRMINO</label>
+					<label>TÉRMINO *</label>
 				</div>
 				<div class="input-field col s6">
 					<i class="material-icons prefix">event_note</i>
 					<input class="validate" type="text" value="" name="descricao" id="descricaoId" />
-					<label for="descricaoId">DESCRIÇÃO</label>
+					<label for="descricaoId">DESCRIÇÃO *</label>
 				</div>
 				<div class="input-field col s3">
 					<i class="material-icons prefix">class</i>
 					<input class="validate" type="number" value="" name="id_categoria" id="categoriaId" />
-					<label for="categoriaId">CATEGORIA</label>
+					<label for="categoriaId">CATEGORIA *</label>
 				</div>
 				<div class="input-field col s3">
 					<i class="material-icons prefix">people</i>
 					<input class="validate" type="number"value=""  name="numero_vagas" id="numero_vagasId" />
-					<label for="numero_vagasId">VAGAS</label>
+					<label for="numero_vagasId">VAGAS *</label>
 				</div>
 				<div class="input-field col s6">
 					<i class="material-icons prefix">perm_contact_calendar</i>
