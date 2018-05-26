@@ -9,11 +9,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
-@Table(name = "categoria")
+@Entity									//Fazendo com que a classe seja reconhecida como uma tabela pelo SGBD
+@Table(name = "categoria")				//Setando o nome da tabela que o SGBD irá reconhecer a partir da classe
 public class Categoria implements Serializable{
 	
-	public Categoria() {
+	public Categoria() {				//Construtor vazio
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -24,9 +24,13 @@ public class Categoria implements Serializable{
 	@GeneratedValue(strategy=GenerationType.AUTO)	//Fazendo com que o id das categorias seja preenchido automaticamente
 	private long id;
 	
-	@Column(name="categoria")
+	@Column(name="categoria")						//setando o nome da coluna que será reconhecida pelo SGBD
 	private String categoria;
 
+	
+	//Getters e Setters dos atributos da classe
+	
+	
 	public long getId() {
 		return id;
 	}

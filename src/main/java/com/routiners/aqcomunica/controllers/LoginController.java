@@ -9,19 +9,19 @@ import com.routiners.aqcomunica.models.Usuario;
 import com.routiners.aqcomunica.repository.UsuariosRepository;
 
 @Controller
-public class CadastrarUsuarioController {
-	
+public class LoginController {
+
 	@Autowired
 	private UsuariosRepository ur;
 	
-	@RequestMapping(value="/cadastrarUsuario", method=RequestMethod.GET)
+	@RequestMapping(value="/entrar", method=RequestMethod.GET)
 	public String cadastrarUsuario() {
-		return "cadastrarUsuario";
+		return "entrar";
 	}
 	
-	@RequestMapping(value="/cadastrarUsuario", method=RequestMethod.POST)
+	@RequestMapping(value="/entrar", method=RequestMethod.POST)
 	public String cadastrarUsuario(Usuario usuario) {
-		ur.save(usuario);
-		return "redirect:/";	//trocar para redirecionar para página de login
+		ur.getClass();						//COMPARAR SE OS DADOS INSERIDOS EXISTEM NO BANCO DE DADOS
+		return "redirect:/";
 	}
 }
