@@ -10,9 +10,9 @@
 		
 		<properties>
 						<!--Estabelecendo conexão com banco de dados local  -->
-			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/jeferson"/>
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/bd_aquicomunica"/>
 			<property name="javax.persistence.jdbc.user" value="jeferson"/>
-			<property name="javax.persistence.jdbc.password" value="Bjhbdsk21"/>
+			<property name="javax.persistence.jdbc.password" value="AfgB23Klcz"/>
 			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
 			
 						<!-- Configuração das propriedades do Hibernate -->

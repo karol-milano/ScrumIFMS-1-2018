@@ -24,6 +24,9 @@ public class Eventos implements Serializable{
 	@GeneratedValue(strategy=GenerationType.AUTO)	//Fazendo com que o id dos eventos seja preenchido automaticamente
 	private long id;
 	
+	@Column(name="imagem")
+	private byte[] imagem;
+	
 	@Column(name="nome")
 	private String nome;
 	
@@ -67,6 +70,14 @@ public class Eventos implements Serializable{
 
 	public void setId(long id) {
 		this.id = id;
+	}
+
+	public byte[] getImagem() {
+		return imagem;
+	}
+
+	public void setImagem(byte[] imagem) {
+		this.imagem = imagem;
 	}
 
 	public String getNome() {
