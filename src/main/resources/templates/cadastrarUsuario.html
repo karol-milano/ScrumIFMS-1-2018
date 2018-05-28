@@ -45,26 +45,40 @@
 	</head>
 	<body>
 	
-		<h1 class="center-align"><b>Crie sua conta agora!</b></h1>
+		<h3 class="center-align">Crie sua conta!</h3>
 		
-		<form	class="container" name="cadastrarUsuario" id="cadastarUsuarioId" method="post">
-			<div class="input-field col s12">
-				<input class="validate" name="nome" id="nomeId" type="text" value=""><br><br>
-				<label for="nomeId">Nome completo</label>
-			</div>
-			<div class="input-field col s12">
-				<input class="validate" name="email" id="emailId" type="email" value=""><br><br>
-				<label for="emailId">Email</label>
-			</div>
-			<div class="input-field col s12">
-				<input class="validate" name="senha" id="senhaId" type="password" value=""><br><br>
-				<label for="senhaId">Senha</label>
-			</div>
-			<span class="red-text" id="mensagem"></span>
-			<div class="center-align">
-				<button name="cadastrar" id="cadastrarId" type="button" class="waves-effect waves-light btn">Cadastre-se</button><br><br>
-			</div>
-		</form>
+		<div>
+			<form	class="container" name="cadastrarUsuario" id="cadastarUsuarioId" method="post">
+			
+				<div class="row">
+					<div class="input-field col s6">
+						<input class="validate" name="nome" id="nomeId" type="text" value=""><br><br>
+						<label for="nomeId">Nome completo</label>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="input-field col s6">
+						<input class="validate" name="email" id="emailId" type="email" value=""><br><br>
+						<label for="emailId">Email</label>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="input-field col s6">
+						<input class="validate" name="senha" id="senhaId" type="password" value=""><br><br>
+						<label for="senhaId">Senha</label>
+					</div>
+				</div>
+	
+				<span class="red-text" id="mensagem"></span>
+				<div class="center-align">
+					<button name="cadastrar" id="cadastrarId" type="button" class="waves-effect waves-light btn">Cadastre-se</button><br><br>
+				</div>
+			</form>
+			<!-- iframe para colocar na view sobre -->
+			<iframe src="https://ghbtns.com/github-btn.html?user=karol-milano&repo=ScrumIFMS-1-2018&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
+		</div>
 		
 		<div class="center-align">
 			<a href="/">Voltar a página inicial</a>
