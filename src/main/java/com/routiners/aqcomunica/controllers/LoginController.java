@@ -14,12 +14,12 @@ public class LoginController {
 	@Autowired
 	private UsuariosRepository ur;
 	
-	@RequestMapping(value="/entrar", method=RequestMethod.GET)
+	@RequestMapping(value="/login", method=RequestMethod.GET)
 	public String cadastrarUsuario() {
-		return "entrar";
+		return "login";
 	}
 	
-	@RequestMapping(value="/entrar", method=RequestMethod.POST)
+	@RequestMapping(value="/login", method=RequestMethod.POST)
 	public String cadastrarUsuario(Usuario usuario) {
 		ur.getClass();						//COMPARAR SE OS DADOS INSERIDOS EXISTEM NO BANCO DE DADOS
 		return "redirect:/";

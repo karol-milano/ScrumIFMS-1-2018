@@ -23,6 +23,6 @@ public class CategoriaController {
 	@RequestMapping(value="/cadastrarCategoria", method=RequestMethod.POST)
 	public String cadastrarUsuario(Categoria categoria) {
 		cr.save(categoria);
-		return "redirect:/";
+		return "redirect:/cadastrarCategoria";
 	}
 }

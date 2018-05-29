@@ -2,7 +2,7 @@
 <html xmlns:th="http://thymeleaf.org"
 	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 	<head>
-		<title>AQ COMUNICA - Cadastre uma categoria</title>
+		<title>AQ COMUNICA - Adicione uma categoria</title>
 		<!--Import Google Icon Font-->
       	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
       	<!--Import materialize.css-->
@@ -23,7 +23,7 @@
 							$("#mensagem").html("<b><br>Preencha o nome da categoria a ser adicionada!</b>");
 							$("#nome_categoriaId").focus();
 						}else{
-							$("#cadastarUsuarioId").submit();
+							$("#cadastroCategoriaId").submit();
 							alert("Categoria adicionada com sucesso!")
 					}
 				
@@ -41,7 +41,7 @@
 			      <a href="/" class="brand-logo"><i class="material-icons center">event</i>IFMS Aqui Comunica</a>
 			      <ul id="nav-mobile" class="right hide-on-med-and-down">
 			        <li><a href="/cadastrarEvento">Publique seu evento</a></li>
-			        <li><a >Login</a></li>
+			        <li><a href="/login">Login</a></li>
 			        <li><a href="/cadastrarUsuario">É novo aqui? Cadastre-se</a></li>
 			      </ul>
 			    </div>

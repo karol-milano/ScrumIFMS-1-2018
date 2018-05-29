@@ -2,7 +2,7 @@
 <html xmlns:th="http://thymeleaf.org"
 	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 	<head>
-		<title>AQ COMUNICA -- Cadastre-se</title>
+		<title>AQ COMUNICA - Cadastre-se</title>
 		<!--Import Google Icon Font-->
       	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
       	<!--Import materialize.css-->
@@ -50,38 +50,39 @@
 		<div>
 			<form	class="container" name="cadastrarUsuario" id="cadastarUsuarioId" method="post">
 			
-				<div class="row">
 					<div class="input-field col s6">
 						<input class="validate" name="nome" id="nomeId" type="text" value=""><br><br>
 						<label for="nomeId">Nome completo</label>
 					</div>
-				</div>
-				
-				<div class="row">
+					
+					<br>
+					
 					<div class="input-field col s6">
 						<input class="validate" name="email" id="emailId" type="email" value=""><br><br>
 						<label for="emailId">Email</label>
 					</div>
-				</div>
-				
-				<div class="row">
+					
+					<br>
+					
 					<div class="input-field col s6">
 						<input class="validate" name="senha" id="senhaId" type="password" value=""><br><br>
 						<label for="senhaId">Senha</label>
 					</div>
-				</div>
 	
 				<span class="red-text" id="mensagem"></span>
 				<div class="center-align">
 					<button name="cadastrar" id="cadastrarId" type="button" class="waves-effect waves-light btn">Cadastre-se</button><br><br>
 				</div>
 			</form>
-			<!-- iframe para colocar na view sobre -->
-			<iframe src="https://ghbtns.com/github-btn.html?user=karol-milano&repo=ScrumIFMS-1-2018&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
+			
 		</div>
 		
+		<br><br>
+		
 		<div class="center-align">
-			<a href="/">Voltar a página inicial</a>
+			<a href="/login">Fazer Login </a>
+			|
+			<a href="/"> Voltar a página inicial</a>
 		</div>
 				
 		<!--JavaScript at end of body for optimized loading-->
