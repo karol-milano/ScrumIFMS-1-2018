@@ -10,3 +10,4 @@ public class AqcomunicaApplication {
 		SpringApplication.run(AqcomunicaApplication.class, args);
 	}
 }
+	
