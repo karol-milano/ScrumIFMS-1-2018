@@ -63,6 +63,9 @@ public class Eventos implements Serializable{
 	@Column(name="organizador")
 	private String organizador;
 	
+	@Column(name="limite")
+	private String limite;
+	
 	
 	public long getId() {
 		return id;
@@ -174,6 +177,14 @@ public class Eventos implements Serializable{
 
 	public void setOrganizador(String organizador) {
 		this.organizador = organizador;
+	}
+	
+	public String getLimite() {
+		return limite;
+	}
+	
+	public void setLimite(String limite) {
+		this.limite = limite;
 	}
 
 	public static long getSerialversionuid() {
